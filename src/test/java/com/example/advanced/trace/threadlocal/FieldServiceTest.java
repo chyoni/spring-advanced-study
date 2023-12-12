@@ -28,7 +28,7 @@ public class FieldServiceTest {
         threadB.setName("thread-B");
 
         threadA.start();
-        sleep(2000);
+        sleep(100);
         threadB.start();
         sleep(3000);
 
