@@ -1,6 +1,6 @@
 package com.example.advanced.app.proxy.v1;
 
-public class ProxyOrderRepositoryV1Impl implements ProxyOrderRepositoryV1 {
+public class OrderRepositoryV1Impl implements OrderRepositoryV1 {
     @Override
     public void save(String itemId) {
 

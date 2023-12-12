@@ -8,17 +8,17 @@ import org.springframework.context.annotation.Configuration;
 public class AppV1Config {
 
     @Bean
-    public ProxyOrderControllerV1 proxyOrderControllerV1() {
-        return new ProxyOrderControllerV1Impl(proxyOrderServiceV1());
+    public OrderControllerV1 orderControllerV1() {
+        return new OrderControllerV1Impl(orderServiceV1());
     }
 
     @Bean
-    public ProxyOrderServiceV1 proxyOrderServiceV1() {
-        return new ProxyOrderServiceV1Impl(proxyOrderRepositoryV1());
+    public OrderServiceV1 orderServiceV1() {
+        return new OrderServiceV1Impl(orderRepositoryV1());
     }
 
     @Bean
-    public ProxyOrderRepositoryV1 proxyOrderRepositoryV1() {
-        return new ProxyOrderRepositoryV1Impl();
+    public OrderRepositoryV1 orderRepositoryV1() {
+        return new OrderRepositoryV1Impl();
     }
 }
