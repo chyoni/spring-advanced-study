@@ -20,6 +20,8 @@ public class ConcreteProxyTest {
         ConcreteLogic concreteLogic = new ConcreteLogic();
         TimeProxy timeProxy = new TimeProxy(concreteLogic);
 
+        // ConcreteClient는 ConcreteLogic을 주입받지만 실제로 주입받는건 TimeProxy이다. 이게 가능한 이유는 TimeProxy는 ConcreteLogic을 상속받기 때문.
+        // 부모 타입에 자식은 들어갈 수 있다. (그 반대는 안돼요)
         ConcreteClient client = new ConcreteClient(timeProxy);
 
         client.execute();
