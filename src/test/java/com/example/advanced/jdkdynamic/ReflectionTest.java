@@ -28,12 +28,16 @@ public class ReflectionTest {
             NoSuchMethodException,
             InvocationTargetException,
             IllegalAccessException {
+        // 1. 패키지 명으로 클래스를 가져온다.
         Class<?> classHello = Class.forName("com.example.advanced.jdkdynamic.ReflectionTest$Hello");
 
         Hello target = new Hello();
+
+        // 2. 위 1번 방법으로 가져온 클래스로부터 메서드를 이름을 통해 찾는다.
         Method methodCallA = classHello.getMethod("callA");
         Method methodCallB = classHello.getMethod("callB");
 
+        // 3. 찾은 메서드의 invoke()를 실행하면 해당 메서드를 실행하는데 이 때 어떤 객체의 메서드를 실행할지 파라미터로 넘겨준다.
         Object result1 = methodCallA.invoke(target);
         Object result2 = methodCallB.invoke(target);
 
