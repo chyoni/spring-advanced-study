@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.Proxy;
 
 /**
- * ⭐️ JDK 동적 프록시는 인터페이스가 필수이다.
+ * ⭐JDK 동적 프록시는 인터페이스가 필수이다.
  * */
 @Slf4j
 public class JdkDynamicProxyTest {

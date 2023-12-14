@@ -1,14 +1,15 @@
 package com.example.advanced;
 
-import com.example.advanced.app.proxy.config.v1_proxy.ConcreteProxyConfig;
-import com.example.advanced.app.proxy.config.v1_proxy.InterfaceProxyConfig;
+// import com.example.advanced.app.proxy.config.v1_proxy.v2_dynamicproxy.DynamicProxyBasicConfig;
+import com.example.advanced.app.proxy.config.v1_proxy.v2_dynamicproxy.DynamicProxyFilterConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
 // @Import({AppV1Config.class, AppV2Config.class})
 // @Import(InterfaceProxyConfig.class)
-@Import(ConcreteProxyConfig.class)
+// @Import(ConcreteProxyConfig.class)
+@Import({DynamicProxyFilterConfig.class, LogTraceConfig.class})
 @SpringBootApplication(scanBasePackages = "com.example.advanced.app.proxy")
 public class AdvancedApplication {
 

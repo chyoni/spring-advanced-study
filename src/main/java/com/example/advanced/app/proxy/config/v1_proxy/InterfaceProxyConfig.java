@@ -1,3 +1,4 @@
+/*
 package com.example.advanced.app.proxy.config.v1_proxy;
 
 import com.example.advanced.LogTraceConfig;
@@ -37,3 +38,4 @@ public class InterfaceProxyConfig {
         return new OrderRepositoryInterfaceProxy(repositoryImpl, logTrace);
     }
 }
+*/

@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
-@RequestMapping
 @Controller
 @ResponseBody
 public class OrderControllerV2 {
@@ -20,8 +19,6 @@ public class OrderControllerV2 {
 
     @GetMapping("/v2/request")
     public String request(String itemId) {
-        log.info("OrderControllerV2.request()");
-
         orderService.orderItem(itemId);
         return "ok";
     }
