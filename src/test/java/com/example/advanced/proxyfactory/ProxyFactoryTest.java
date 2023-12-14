@@ -32,6 +32,8 @@ public class ProxyFactoryTest {
 
         // ProxyFactory를 이용하기 위해선 스프링에서 제공하는 Advice 인터페이스 구현한 클래스가 필요하다.
         // 그 Advice를 상속받는 Interceptor를 상속받는 MethodInterceptor를 구현한 클래스를 만들었다. (TimeAdvice)
+        // addAdvice()로 Advice만 ProxyFactory에 추가하면 DefaultPointcutAdvisor(Pointcut.TRUE)가 생성된다.
+        // advisor 를 간단하게 생성하는 편의성 메서드라고 보면 된다.
         proxyFactory.addAdvice(new TimeAdvice());
 
         // proxyFactory에서 proxy를 꺼내온다. 이 proxy는 인터페이스를 제공했으면 JDK Dynamic Proxy로 만들어지고
