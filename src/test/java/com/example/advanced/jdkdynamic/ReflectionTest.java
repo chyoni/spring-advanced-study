@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * Reflection은 메타 데이터를 가져올 수 있는 자바의 기능이다.
+ * 패키지 + 클래스 명으로 클래스를 가져오고 메서드 명으로 메서드를 가져올 수 있다.
+ * 이 기능을 이용해서 JDK Dynamic Proxy를 만든다.
+ * */
 @Slf4j
 public class ReflectionTest {
 
