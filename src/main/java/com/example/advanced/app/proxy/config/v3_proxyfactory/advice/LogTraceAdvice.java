@@ -1,32 +1,33 @@
-package com.example.advanced.app.proxy.config.v1_proxy.v2_dynamicproxy.handler;
+package com.example.advanced.app.proxy.config.v3_proxyfactory.advice;
 
 import com.example.advanced.trace.TraceStatus;
 import com.example.advanced.trace.logtrace.LogTrace;
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class LogTraceBasicHandler implements InvocationHandler {
+public class LogTraceAdvice implements MethodInterceptor {
 
-    private final Object target;
     private final LogTrace logTrace;
 
-    public LogTraceBasicHandler(Object target, LogTrace logTrace) {
-        this.target = target;
+    public LogTraceAdvice(LogTrace logTrace) {
         this.logTrace = logTrace;
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    public Object invoke(MethodInvocation invocation) throws Throwable {
         TraceStatus status = null;
 
         try {
+            Method method = invocation.getMethod();
+
             // Ex) "OrderController.request()"
             String message = method.getDeclaringClass().getSimpleName() + "." + method.getName() + "()";
 
             status = logTrace.begin(message);
 
-            Object result = method.invoke(target, args);
+            Object result = invocation.proceed();
 
             logTrace.end(status);
             return result;

@@ -1,6 +1,7 @@
-package com.example.advanced.app.proxy.config.v1_proxy.v2_dynamicproxy;
+/*
+package com.example.advanced.app.proxy.config.v2_dynamicproxy;
 
-import com.example.advanced.app.proxy.config.v1_proxy.v2_dynamicproxy.handler.LogTraceFilterHandler;
+import com.example.advanced.app.proxy.config.v2_dynamicproxy.handler.LogTraceFilterHandler;
 import com.example.advanced.app.proxy.v1.OrderRepositoryV1;
 import com.example.advanced.app.proxy.v1.OrderRepositoryV1Impl;
 import com.example.advanced.app.proxy.v1.OrderServiceV1;
@@ -48,3 +49,4 @@ public class DynamicProxyFilterConfig {
                 new LogTraceFilterHandler(orderRepository, logTrace, PATTERNS));
     }
 }
+*/

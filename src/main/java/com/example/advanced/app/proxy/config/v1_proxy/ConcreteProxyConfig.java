@@ -1,3 +1,4 @@
+/*
 
 package com.example.advanced.app.proxy.config.v1_proxy;
 
@@ -35,3 +36,4 @@ public class ConcreteProxyConfig {
         return new OrderRepositoryConcreteProxy(orderRepositoryV2, logTrace);
     }
 }
+*/
