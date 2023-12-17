@@ -6,6 +6,9 @@ import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
+/**
+ * 이건 우리가 직접 만드는 BeanPostProcessor 이다. 이 말은? 스프링이 제공해주는 빈 후처리기도 있다는 뜻이다.
+ * */
 @Slf4j
 public class PackageLogTracePostProcessor implements BeanPostProcessor {
 

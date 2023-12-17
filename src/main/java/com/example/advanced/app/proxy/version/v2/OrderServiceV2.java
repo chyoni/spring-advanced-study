@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy.v2;
+package com.example.advanced.app.proxy.version.v2;
 
 
 public class OrderServiceV2 {

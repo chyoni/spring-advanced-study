@@ -1,7 +1,7 @@
-package com.example.advanced.app.proxy.v1;
+package com.example.advanced.app.proxy.version.v2;
 
-public class OrderRepositoryV1Impl implements OrderRepositoryV1 {
-    @Override
+public class OrderRepositoryV2 {
+
     public void save(String itemId) {
 
         if (itemId.equals("ex")) {

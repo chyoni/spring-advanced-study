@@ -1,9 +1,8 @@
 package com.example.advanced;
 
-import com.example.advanced.app.proxy.v1.*;
-import com.example.advanced.app.proxy.v2.OrderControllerV2;
-import com.example.advanced.app.proxy.v2.OrderRepositoryV2;
-import com.example.advanced.app.proxy.v2.OrderServiceV2;
+import com.example.advanced.app.proxy.version.v2.OrderControllerV2;
+import com.example.advanced.app.proxy.version.v2.OrderRepositoryV2;
+import com.example.advanced.app.proxy.version.v2.OrderServiceV2;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

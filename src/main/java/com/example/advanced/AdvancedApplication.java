@@ -1,6 +1,6 @@
 package com.example.advanced;
 
-import com.example.advanced.app.proxy.config.v4_postprocessor.BeanPostProcessorConfig;
+import com.example.advanced.app.proxy.config.v5_autoproxy.AutoProxyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Import;
 // @Import(ConcreteProxyConfig.class)
 // @Import({DynamicProxyFilterConfig.class, LogTraceConfig.class})
 // @Import({ProxyFactoryConfigV1.class, ProxyFactoryConfigV2.class, LogTraceConfig.class})
-@Import({BeanPostProcessorConfig.class})
+// @Import({BeanPostProcessorConfig.class})
+@Import(AutoProxyConfig.class)
 @SpringBootApplication(scanBasePackages = "com.example.advanced.app.proxy")
 public class AdvancedApplication {
 

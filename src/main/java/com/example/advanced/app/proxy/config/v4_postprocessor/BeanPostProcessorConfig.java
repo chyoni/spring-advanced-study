@@ -1,3 +1,4 @@
+/*
 package com.example.advanced.app.proxy.config.v4_postprocessor;
 
 import com.example.advanced.LogTraceConfig;
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
+*/
 /**
  * Bean PostProcessor(빈후처리기)를 사용하는 이유는 컴포넌트 스캔 대상은 스프링이 자동으로 해당 컴포넌트를 빈으로 등록을 해버리기 때문에 우리의 프록시를 적용할 수가 없다.
  * 그래서 컴포넌트 스캔 대상이 되는 컴포넌트들을 프록시로 만들기 위해 스프링이 스프링 컨테이너에 최종적으로 빈으로 등록하기 바로 전 단계에서 우리의 프록시로 변환을 해주는 것.
@@ -24,6 +26,8 @@ import org.springframework.context.annotation.Import;
  * 내가 프록시로 등록되길 원하는 대상만을 패키지 명으로 검사해서 프록시를 입혀 스프링 컨테이너로 등록함.
  * V3 같은 경우 컴포넌트 스캔 대상이므로 따로 빈으로 등록할 필요가 없기 때문에 AppV3Config 같은 파일은 없다.
  * */
+
+/*
 @Slf4j
 @Configuration
 @Import({AppV1Config.class, AppV2Config.class, LogTraceConfig.class})
@@ -43,3 +47,4 @@ public class BeanPostProcessorConfig {
         return new DefaultPointcutAdvisor(pointcut, advice);
     }
 }
+*/

@@ -1,6 +1,6 @@
 package com.example.advanced.app.proxy.config.v1_proxy.interface_proxy;
 
-import com.example.advanced.app.proxy.v1.OrderRepositoryV1;
+import com.example.advanced.app.proxy.version.v1.OrderRepositoryV1;
 import com.example.advanced.trace.TraceStatus;
 import com.example.advanced.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;

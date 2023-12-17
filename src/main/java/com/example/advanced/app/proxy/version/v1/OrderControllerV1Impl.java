@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy.v1;
+package com.example.advanced.app.proxy.version.v1;
 
 import lombok.extern.slf4j.Slf4j;
 

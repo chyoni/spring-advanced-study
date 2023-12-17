@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy.v3;
+package com.example.advanced.app.proxy.version.v3;
 
 import org.springframework.stereotype.Repository;
 

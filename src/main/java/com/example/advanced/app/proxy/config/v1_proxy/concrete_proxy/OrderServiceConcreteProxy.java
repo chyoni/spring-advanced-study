@@ -1,6 +1,6 @@
 package com.example.advanced.app.proxy.config.v1_proxy.concrete_proxy;
 
-import com.example.advanced.app.proxy.v2.OrderServiceV2;
+import com.example.advanced.app.proxy.version.v2.OrderServiceV2;
 import com.example.advanced.trace.TraceStatus;
 import com.example.advanced.trace.logtrace.LogTrace;
 

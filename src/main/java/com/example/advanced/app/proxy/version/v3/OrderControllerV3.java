@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy.v3;
+package com.example.advanced.app.proxy.version.v3;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
