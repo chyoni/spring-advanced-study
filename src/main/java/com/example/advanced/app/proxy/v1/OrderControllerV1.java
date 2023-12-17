@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy_v1_controller;
+package com.example.advanced.app.proxy.v1;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -25,8 +25,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    // 이 의존성을 주입하면 aspectj:aspectjweaver 라는 라이브러리를 추가해주는데 스프링 부트가 AOP 관련 클래스를 자동으로 스프링 빈에 등록한다.
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
 }

@@ -1,4 +1,4 @@
-package com.example.advanced.app.proxy_v1_controller;
+package com.example.advanced;
 
 import com.example.advanced.app.proxy.v1.*;
 import com.example.advanced.app.proxy.v2.OrderControllerV2;

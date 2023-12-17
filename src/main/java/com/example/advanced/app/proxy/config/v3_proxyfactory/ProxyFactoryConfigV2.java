@@ -1,3 +1,4 @@
+/*
 package com.example.advanced.app.proxy.config.v3_proxyfactory;
 
 import com.example.advanced.app.proxy.config.v3_proxyfactory.advice.LogTraceAdvice;
@@ -55,3 +56,4 @@ public class ProxyFactoryConfigV2 {
         return new DefaultPointcutAdvisor(pointcut, advice);
     }
 }
+*/
