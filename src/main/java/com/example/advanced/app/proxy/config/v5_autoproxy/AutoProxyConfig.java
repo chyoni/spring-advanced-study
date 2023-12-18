@@ -32,10 +32,12 @@ import org.springframework.context.annotation.Import;
  * OrderServiceV1,V2,V3 모두 orderItem()을 가지고 있지? 그럼 OrderServiceV1,V2,V3 모두 이 Advisor 를 가지는 프록시가 만들어진다.
  *
  * 그러니까 결론은, Advisor 만 빈으로 잘 등록해놓으면 그 이후에 프록시를 입힐 대상이 컴포넌트 스캔이든 수동 빈으로 등록된 것이든 간 우리는 걱정할 필요없이 프록시로 스프링 컨테이너에 등록되는 것을 보장받을 수 있다.
+ *
+ * (추가) 그리고 만약에 Advisor 가 2개 또는 3개 그 이상이 있을 때 여러 어드바이저의 포인트컷을 동시에 만족하면 여러 프록시를 만드는게 아니고 하나의 프록시의 여러 Advisor 가 생성된다. 이건 반드시 기억할 것⭐️
  * */
 @Slf4j
-@Configuration
-@Import({AppV1Config.class, AppV2Config.class, LogTraceConfig.class})
+// @Configuration
+// @Import({AppV1Config.class, AppV2Config.class, LogTraceConfig.class})
 public class AutoProxyConfig {
 
     //@Bean
