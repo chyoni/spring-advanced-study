@@ -16,7 +16,6 @@ public class OrderControllerV3 {
 
     @GetMapping("/v3/request")
     public String request(String itemId) {
-        log.info("OrderControllerV3.request()");
 
         orderService.orderItem(itemId);
         return "ok";

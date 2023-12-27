@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
 // @Import({ProxyFactoryConfigV1.class, ProxyFactoryConfigV2.class, LogTraceConfig.class})
 // @Import({BeanPostProcessorConfig.class})
 // @Import(AutoProxyConfig.class)
-@Import(AopConfig.class)
+// @Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = "com.example.advanced.app.proxy")
 public class AdvancedApplication {
 

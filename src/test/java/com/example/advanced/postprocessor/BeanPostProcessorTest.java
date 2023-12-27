@@ -56,6 +56,7 @@ public class BeanPostProcessorTest {
 
     static class AtoBPostProcessor implements BeanPostProcessor {
 
+
         @Override
         public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
             log.info("beanName = {}, bean = {}", beanName, bean);
